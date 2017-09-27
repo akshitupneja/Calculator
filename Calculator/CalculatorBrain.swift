@@ -64,7 +64,9 @@ struct CalculatorBrain {
                 if accumulator != nil {
                     pbo = PendingBinaryOperation(function: function, firstOperand: accumulator!)
                     accumulator = nil
+                    
                 }
+                
         
             case .equals :
                 performPendingBinaryOperation()

@@ -45,6 +45,9 @@
                                                         <state key="normal" title="C">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="performAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9dQ-cc-Fla"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oa-5f-zJb">
                                                         <rect key="frame" x="94" y="0.0" width="93" height="103.5"/>
