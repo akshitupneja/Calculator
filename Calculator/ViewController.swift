@@ -1,6 +1,8 @@
 //
 //  ViewController.swift
 //  Calculator
+//  Student ID: 300976590
+//  Version: 1.0
 //
 //  Created by Akshit Upneja on 2017-09-22.
 //  Copyright © 2017 Centennial College. All rights reserved.
@@ -22,8 +24,8 @@ class ViewController: UIViewController {
 
     
     
-    @IBOutlet weak var display: UILabel!
-    var userIsInMiddleOfTyping  = false
+    @IBOutlet weak var display: UILabel! //Display of calculator
+    var userIsInMiddleOfTyping  = false  // to identify if user is entering first digit
     var decimalEnabled = false
     
     
@@ -58,7 +60,7 @@ class ViewController: UIViewController {
         
     
         
-        
+        //  Handling a case when 0 is pressed as first digit
         if userIsInMiddleOfTyping {
             let currentTextInDisplay = display!.text!
             display.text = currentTextInDisplay + digit
@@ -76,7 +78,7 @@ class ViewController: UIViewController {
  
     }
     
-    
+    // Set and get method for value displayed get function will get numbers as double and get with display double as strig
     var displayValue : Double {
         get {
             return Double(display.text!)!
@@ -86,12 +88,14 @@ class ViewController: UIViewController {
         }
     }
     
-    var brain : CalculatorBrain = CalculatorBrain()
+    
+    
+    var brain : CalculatorBrain = CalculatorBrain() //Object created to use ComputerBrain.swift file
 
     @IBAction func performAction(_ sender: UIButton) {
         
             switch sender.currentTitle! {
-            case "C":
+            case "C":                           //Below line handles a case when C is pressed
                 display.text = "0"
                 userIsInMiddleOfTyping = false
                 
