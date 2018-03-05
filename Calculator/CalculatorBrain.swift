@@ -34,7 +34,7 @@ struct CalculatorBrain {
         "÷": Operation.binaryOperation({ $0 / $1 }),
         "x": Operation.binaryOperation({ $0 * $1 }),
         "=": Operation.equals,
-        "V": Operation.clear
+        "C": Operation.clear
         
     ]
     
